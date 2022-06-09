@@ -1,2 +1,5 @@
 export * from "./types"
 export * from "./HttpError"
+export * from "./HttpServer"
+export * from "./HttpRestApi"
+export * from "./HttpResponse"
