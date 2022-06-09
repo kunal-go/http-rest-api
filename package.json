@@ -20,5 +20,8 @@
     "http-rest-api",
     "http-server",
     "http-rest-server"
-  ]
+  ],
+  "engines": {
+    "node": ">=14.0.0"
+  }
 }
