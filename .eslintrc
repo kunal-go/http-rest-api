@@ -1,0 +1,7 @@
+{
+	"rules": {
+		"quotes": ["error", "double"],
+		"radix": ["error", "as-needed"],
+		"curly": "error"
+	}
+}
