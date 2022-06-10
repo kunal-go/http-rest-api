@@ -1,6 +1,6 @@
 {
 	"name": "http-rest-api",
-	"version": "0.0.1",
+	"version": "0.1.0",
 	"description": "Clean and type-safe REST-API server based on express",
 	"main": "dist/index.js",
 	"type": "commonjs",
