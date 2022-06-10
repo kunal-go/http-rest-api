@@ -12,7 +12,7 @@ type Handler = (context: HandlerContext) => Promise<HttpResponse | any>
 
 interface ConstructorParams {
 	method: HttpMethod
-	endpoint: string
+	path: string
 	options?: ApiOptions
 	middlewares?: RequestHandler[]
 	handler: Handler
@@ -24,7 +24,7 @@ interface ApiOptions {
 
 export class HttpRestApi {
 	method: HttpMethod
-	endpoint: string
+	path: string
 	options: ApiOptions
 	middlewares: RequestHandler[]
 	handler: Handler
@@ -33,7 +33,7 @@ export class HttpRestApi {
 
 	constructor(payload: ConstructorParams) {
 		this.method = payload.method
-		this.endpoint = payload.endpoint
+		this.path = payload.path
 
 		const isProduction = process.env.NODE_ENV === "production"
 		const defaultOptions: ApiOptions = { hideErrorStack: isProduction }

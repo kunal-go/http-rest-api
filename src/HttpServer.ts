@@ -29,7 +29,7 @@ export class HttpServer {
 	registerRestApis(...apis: HttpRestApi[]) {
 		for (const api of apis) {
 			const handlers = [...api.middlewares, api.callApi]
-			this.server[api.method](api.endpoint, ...handlers)
+			this.server[api.method](api.path, ...handlers)
 		}
 	}
 }
